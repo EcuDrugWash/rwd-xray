@@ -1,0 +1,12 @@
+From @twizzter:
+I've analysed few dumps and i believe i found some dependency:
+
+Let's assume filename is ABCDE-FGH-IJKL, then ID inside would be something like:
+AABBCCDEED--FFG[always C]H[always A]--I[always A]J[always 0]KL[always 00]
+
+Second thing: if filename in named like smth-smth-smth_H710_H720_H730, only last H730 is taken and coded inside dump.
+
+Don't know if this "algo" will work with files other than 37805 (ECUs).
+Anyway, we could simply look for "3377880550" for now.
+
+—
